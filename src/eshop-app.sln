@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{450F6A9A-5D9F-4549-BD18-D085C54E110A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{5CCF90C0-201A-4766-B515-7AC7A4A809F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogAPI", "Services\Catalog\CatalogAPI\CatalogAPI.csproj", "{8164E482-8B57-4E11-BE7F-BFBE9B7B53DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{095735D8-3DE8-4487-BA64-0C03AF3BFF97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{F5B14695-BFB2-4CFB-8D54-82206627355F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8164E482-8B57-4E11-BE7F-BFBE9B7B53DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8164E482-8B57-4E11-BE7F-BFBE9B7B53DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8164E482-8B57-4E11-BE7F-BFBE9B7B53DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8164E482-8B57-4E11-BE7F-BFBE9B7B53DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B14695-BFB2-4CFB-8D54-82206627355F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B14695-BFB2-4CFB-8D54-82206627355F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B14695-BFB2-4CFB-8D54-82206627355F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B14695-BFB2-4CFB-8D54-82206627355F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5CCF90C0-201A-4766-B515-7AC7A4A809F0} = {450F6A9A-5D9F-4549-BD18-D085C54E110A}
+		{8164E482-8B57-4E11-BE7F-BFBE9B7B53DA} = {5CCF90C0-201A-4766-B515-7AC7A4A809F0}
+		{F5B14695-BFB2-4CFB-8D54-82206627355F} = {095735D8-3DE8-4487-BA64-0C03AF3BFF97}
+	EndGlobalSection
+EndGlobal

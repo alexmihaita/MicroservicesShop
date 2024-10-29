@@ -1,0 +1,13 @@
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\bin\Debug\net8.0\BuildingBlocks.deps.json
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\bin\Debug\net8.0\BuildingBlocks.dll
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\bin\Debug\net8.0\BuildingBlocks.pdb
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.csproj.AssemblyReference.cache
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.GeneratedMSBuildEditorConfig.editorconfig
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.AssemblyInfoInputs.cache
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.AssemblyInfo.cs
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.csproj.CoreCompileInputs.cache
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.sourcelink.json
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.dll
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\obj\Debug\net8.0\refint\BuildingBlocks.dll
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\obj\Debug\net8.0\BuildingBlocks.pdb
+E:\PersonalAlgo\MicroservicesShop\src\BuildingBlocks\BuildingBlocks\obj\Debug\net8.0\ref\BuildingBlocks.dll

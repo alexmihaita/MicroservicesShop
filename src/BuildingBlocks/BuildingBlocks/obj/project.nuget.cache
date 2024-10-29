@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "unXVZNjTN9s=",
+  "success": true,
+  "projectFilePath": "E:\\PersonalAlgo\\MicroservicesShop\\src\\BuildingBlocks\\BuildingBlocks\\BuildingBlocks.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alex\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
