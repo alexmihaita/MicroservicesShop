@@ -8,19 +8,36 @@
             "platform": "netCore",
             "sourceFileMap": {
                 "/src": "${workspaceFolder}"
-            },
-            // "netCore": {
-            //     "debuggerPath": "/remote_debugger/vsdbg"
-            // },
+            }
         },
         {
-            "name": ".NET Core Launch (web)",
+            "name": ".NET Core Launch (web CatalogAPI)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/src/Services/Catalog/CatalogAPI/bin/Debug/net8.0/CatalogAPI.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/Services/Catalog/CatalogAPI",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Launch (web BasketAPI)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/Services/Basket/BasketAPI/bin/Debug/net8.0/BasketAPI.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Services/Basket/BasketAPI",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
@@ -44,7 +61,7 @@
             "request": "launch",
             "preLaunchTask": "docker-run: debug",
             "netCore": {
-                "appProject": "${workspaceFolder}/src/Services/Catalog/CatalogAPI/CatalogAPI.csproj"
+                "appProject": "${workspaceFolder}/src/Services/Basket/BasketAPI/BasketAPI.csproj"
             }
         }
     ]
