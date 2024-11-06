@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddGrpc();
 builder.Services.AddDbContext<DiscountDbContext> (opts =>
-        opts.UseMySQL(builder.Configuration.GetConnectionString("Database")));
+        opts.UseMySQL(builder.Configuration.GetConnectionString("Database")!));
 
 var app = builder.Build();
 
