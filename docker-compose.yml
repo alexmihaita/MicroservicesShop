@@ -5,6 +5,9 @@ services:
   basketdb:
     image: postgres
   
+  mysqldb:
+    image: mysql
+  
   distributedcache:
     image: redis
   
@@ -19,7 +22,14 @@ services:
     build:
       context: .
       dockerfile: src/Services/Basket/BasketAPI/Dockerfile
+  
+  discountgrpc:
+    image: ${DOCKER_REGISTRY-}discountgrpc
+    build:
+      context: .
+      dockerfile: src/Services/Discount/Discount.Grpc/Dockerfile
 
 volumes:
   postgres_catalog:
   postgres_basket:
+  mysql_data:

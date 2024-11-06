@@ -5,7 +5,7 @@ EXPOSE 8081
 
 USER app
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG configuration=Debug
+ARG configuration=Release
 WORKDIR /src
 COPY ["src/Services/Basket/BasketAPI/BasketAPI.csproj", "src/Services/Basket/BasketAPI/"]
 COPY ["src/BuildingBlocks/BuildingBlocks/BuildingBlocks.csproj", "src/BuildingBlocks/BuildingBlocks/"]
@@ -15,7 +15,7 @@ WORKDIR "/src/src/Services/Basket/BasketAPI"
 RUN dotnet build "BasketAPI.csproj" -c $configuration -o /app/build
 
 FROM build AS publish
-ARG configuration=Debug
+ARG configuration=Release
 RUN dotnet publish "BasketAPI.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
