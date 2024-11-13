@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "gDmU6WvbsB0=",
+  "dgSpecHash": "6Beso5mvmeM=",
   "success": true,
   "projectFilePath": "E:\\PersonalAlgo\\MicroservicesShop\\src\\Services\\Ordering\\OrderingAPI\\OrderingAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alex\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
-    "C:\\Users\\Alex\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\carter\\8.0.0\\carter.8.0.0.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
