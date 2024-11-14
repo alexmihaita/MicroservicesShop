@@ -1,26 +1,26 @@
 {
     "version": "0.2.0",
     "configurations": [
-    {
-        "name": ".NET Core Launch (web OrderingAPI)",
-        "type": "coreclr",
-        "request": "launch",
-        "preLaunchTask": "build",
-        "program": "${workspaceFolder}/src/Services/Ordering/OrderingAPI/bin/Debug/net8.0/OrderingAPI.dll",
-        "args": [],
-        "cwd": "${workspaceFolder}/src/Services/Ordering/OrderingAPI",
-        "stopAtEntry": false,
-        "serverReadyAction": {
-            "action": "openExternally",
-            "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+        {
+            "name": ".NET Core Launch (web OrderingAPI)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/Services/Ordering/OrderingAPI/bin/Debug/net8.0/OrderingAPI.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Services/Ordering/OrderingAPI",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
         },
-        "env": {
-            "ASPNETCORE_ENVIRONMENT": "Development"
-        },
-        "sourceFileMap": {
-            "/Views": "${workspaceFolder}/Views"
-        }
-    },
         {
             "name": "Docker .NET Attach (Preview)",
             "type": "docker",
@@ -81,7 +81,7 @@
             "request": "launch",
             "preLaunchTask": "docker-run: debug",
             "netCore": {
-                "appProject": "${workspaceFolder}/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj"
+                "appProject": "${workspaceFolder}/src/ApiGateways/YarpApiGateway/YarpApiGateway.csproj"
             }
         }
     ]

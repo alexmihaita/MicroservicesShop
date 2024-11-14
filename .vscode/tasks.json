@@ -46,12 +46,12 @@
             "dockerBuild": {
                 "tag": "microservicesshop:dev",
                 "target": "base",
-                "dockerfile": "${workspaceFolder}/src/Services/Discount/Discount.Grpc/Dockerfile",
+                "dockerfile": "${workspaceFolder}/src/ApiGateways/YarpApiGateway/Dockerfile",
                 "context": "${workspaceFolder}",
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj"
+                "appProject": "${workspaceFolder}/src/ApiGateways/YarpApiGateway/YarpApiGateway.csproj"
             }
         },
         {
@@ -62,7 +62,7 @@
             ],
             "dockerBuild": {
                 "tag": "microservicesshop:latest",
-                "dockerfile": "${workspaceFolder}/src/Services/Discount/Discount.Grpc/Dockerfile",
+                "dockerfile": "${workspaceFolder}/src/ApiGateways/YarpApiGateway/Dockerfile",
                 "context": "${workspaceFolder}",
                 "platform": {
                     "os": "linux",
@@ -71,7 +71,7 @@
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj"
+                "appProject": "${workspaceFolder}/src/ApiGateways/YarpApiGateway/YarpApiGateway.csproj"
             }
         },
         {
@@ -82,7 +82,7 @@
             ],
             "dockerRun": {},
             "netCore": {
-                "appProject": "${workspaceFolder}/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj",
+                "appProject": "${workspaceFolder}/src/ApiGateways/YarpApiGateway/YarpApiGateway.csproj",
                 "enableDebugging": true
             }
         },
@@ -94,7 +94,7 @@
             ],
             "dockerRun": {},
             "netCore": {
-                "appProject": "${workspaceFolder}/src/Services/Discount/Discount.Grpc/Discount.Grpc.csproj"
+                "appProject": "${workspaceFolder}/src/ApiGateways/YarpApiGateway/YarpApiGateway.csproj"
             }
         }
     ]

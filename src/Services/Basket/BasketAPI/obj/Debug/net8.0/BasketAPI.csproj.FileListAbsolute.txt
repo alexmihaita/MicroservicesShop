@@ -187,3 +187,13 @@ E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\obj\Debug\net8.0
 E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\obj\Debug\net8.0\BasketAPI.pdb
 E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\obj\Debug\net8.0\BasketAPI.genruntimeconfig.cache
 E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\obj\Debug\net8.0\ref\BasketAPI.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\bin\Debug\net8.0\MassTransit.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\bin\Debug\net8.0\MassTransit.Abstractions.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\bin\Debug\net8.0\RabbitMQ.Client.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\bin\Debug\net8.0\BuildingBlocks.Messaging.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Basket\BasketAPI\bin\Debug\net8.0\BuildingBlocks.Messaging.pdb

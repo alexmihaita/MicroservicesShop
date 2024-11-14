@@ -16,3 +16,5 @@ E:\PersonalAlgo\MicroservicesShop\src\Services\Ordering\Ordering.Application\obj
 E:\PersonalAlgo\MicroservicesShop\src\Services\Ordering\Ordering.Application\obj\Debug\net8.0\refint\Ordering.Application.dll
 E:\PersonalAlgo\MicroservicesShop\src\Services\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.pdb
 E:\PersonalAlgo\MicroservicesShop\src\Services\Ordering\Ordering.Application\obj\Debug\net8.0\ref\Ordering.Application.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Ordering\Ordering.Application\bin\Debug\net8.0\BuildingBlocks.Messaging.dll
+E:\PersonalAlgo\MicroservicesShop\src\Services\Ordering\Ordering.Application\bin\Debug\net8.0\BuildingBlocks.Messaging.pdb

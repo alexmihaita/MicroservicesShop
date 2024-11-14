@@ -31,6 +31,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "Ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infrastructure", "Services\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{9E125C30-8FB8-4F74-AF0E-80053A684630}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks.Messaging", "BuildingBlocks\BuildingBlocks.Messaging\BuildingBlocks.Messaging.csproj", "{D2102274-476D-4214-9083-284EACC6E988}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{5A096968-DEED-48AD-A2F8-C45565A7D896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YarpApiGateway", "ApiGateways\YarpApiGateway\YarpApiGateway.csproj", "{A89169C8-4DE4-4035-8D5F-FEA50836A941}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +75,14 @@ Global
 		{9E125C30-8FB8-4F74-AF0E-80053A684630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E125C30-8FB8-4F74-AF0E-80053A684630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E125C30-8FB8-4F74-AF0E-80053A684630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2102274-476D-4214-9083-284EACC6E988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2102274-476D-4214-9083-284EACC6E988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2102274-476D-4214-9083-284EACC6E988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2102274-476D-4214-9083-284EACC6E988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A89169C8-4DE4-4035-8D5F-FEA50836A941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A89169C8-4DE4-4035-8D5F-FEA50836A941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A89169C8-4DE4-4035-8D5F-FEA50836A941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A89169C8-4DE4-4035-8D5F-FEA50836A941}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,5 +100,7 @@ Global
 		{2B671DFC-EDB3-44C2-9B88-75EB33DB2E8B} = {E3F15284-2588-4026-908D-910BC447056A}
 		{1B23E644-181F-4AE7-A20D-530258C6BE0D} = {E3F15284-2588-4026-908D-910BC447056A}
 		{9E125C30-8FB8-4F74-AF0E-80053A684630} = {E3F15284-2588-4026-908D-910BC447056A}
+		{D2102274-476D-4214-9083-284EACC6E988} = {095735D8-3DE8-4487-BA64-0C03AF3BFF97}
+		{A89169C8-4DE4-4035-8D5F-FEA50836A941} = {5A096968-DEED-48AD-A2F8-C45565A7D896}
 	EndGlobalSection
 EndGlobal

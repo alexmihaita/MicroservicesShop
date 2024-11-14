@@ -1,7 +1,5 @@
+using BuildingBlocks.Messaging.MassTransit;
 using Discount.Grpc;
-using Google.Protobuf.WellKnownTypes;
-using JasperFx.Core;
-using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +45,8 @@ builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(
 });
 
 //Cross-Cutting Services
+builder.Services.AddMessageBroker(builder.Configuration);
+
 builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 
 var app = builder.Build();

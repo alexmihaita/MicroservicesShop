@@ -30,18 +30,31 @@ services:
       MYSQL_USER: mysql_user
       MYSQL_PASSWORD: mysql_pass
     ports:
-      - "3306:3306"
+      - 3307:3306
     volumes:
       - mysql_data:/var/lib/mysql
 
   orderdb:
     container_name: orderdb
     environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=laguna3
+      MYSQL_ROOT_PASSWORD: mysql_pass_root
+      MYSQL_USER: mysql_user
+      MYSQL_PASSWORD: mysql_pass
+    ports:
+      - 3306:3306
+    volumes:
+      - orderdb_data:/var/lib/mysql
+
+  messagebroker:
+    container_name: messagebroker
+    hostname: ecommerce-mq
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
     restart: always
     ports:
-      - "1433:1433"
+      - 5672:5672
+      - 15672:15672
 
   distributedcache:
     container_name: distributedcache
@@ -56,12 +69,16 @@ services:
       - ConnectionStrings__Database=Server=basketdb;Port=5432;Database=basketdb;User Id=postgres;Password=postgres;Include Error Detail=true
       - ConnectionStrings__Redis=distributedcache:6379
       - GrpcSettings__DiscountUrl=http://discountgrpc:8080
+      - MessageBroker__Host=amqp://ecommerce-mq:5672
+      - MessageBroker__UserName=guest
+      - MessageBroker__Password=guest
       - ASPNETCORE_Kestrel__Certificates__Default__Password=laguna3
       - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
     depends_on:
       - basketdb
       - distributedcache
       - discountgrpc
+      - messagebroker
     ports:
       - 6001:8080
       - 6061:8081
@@ -93,5 +110,42 @@ services:
     ports:
       - 6002:8080
       - 6062:8081
+    volumes:
+      - ~/.aspnet/https:/https:ro
+
+  ordering.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080;https://+:8081
+      - ConnectionStrings__Database=Server=orderdb;Port=3306;Database=orderdb;User=mysql_user;Password=mysql_pass
+      - MessageBroker__Host=amqp://ecommerce-mq:5672
+      - MessageBroker__UserName=guest
+      - MessageBroker__Password=guest
+      - FeatureManagement__OrderFullfilment=false
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=laguna3
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+    depends_on:
+      - orderdb
+      - messagebroker
+    ports:
+      - 6004:8080
+      - 6064:8081
+    volumes:
+      - ~/.aspnet/https:/https:ro
+
+  yarpapigateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=laguna3
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+    depends_on:
+      - catalogapi
+      - basketapi
+      - ordering.api
+    ports:
+      - "6006:8080"
+      - "6066:8081"
     volumes:
       - ~/.aspnet/https:/https:ro
