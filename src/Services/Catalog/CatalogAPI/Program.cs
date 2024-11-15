@@ -25,9 +25,6 @@ if (builder.Environment.IsDevelopment())
 builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 
 var app = builder.Build();
-app.UseMiddleware<InspectRequestMiddleware>();
-app.UseHttpsRedirection();
-app.UseMiddleware<InspectRequestMiddleware>();
 app.MapGet("/", () => "hello");
 app.MapCarter();
 
